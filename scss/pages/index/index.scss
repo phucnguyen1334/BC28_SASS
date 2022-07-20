@@ -1,0 +1,183 @@
+@import '../../base/base';
+@import './header';
+
+body{
+    min-height: 100vh;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.menuHorizontal:not(.menuCenter):not(.stickyHeaderActive){
+    .logoArea{
+        .logo{
+            padding-left: 80px;
+            img{
+                height: 80px;
+            }
+        }
+    }
+    .crest{
+        .crestImg{
+            width: 80px;
+        }
+    }
+    .menuPort{
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        .topBarMenu{
+            height: 80px;
+            .btnWidget{
+                a.btnWidgetLink{
+                    box-shadow: 0 0 0 3em #b61984 inset;
+                }
+                a.btnWidgetLink:hover{
+                    color: #b61984;
+                    box-shadow: 0 0 0 3em #b61984 inset;
+                }
+            }
+        }
+    }
+}
+
+.mainHeader{
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    height: 80px;
+}
+.lightSkin{
+    color: #181818;
+    background-color: #fff;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+    transition: all 200ms ease;
+    color: inherit;
+    outline: none;
+    .img{
+        border: none;
+    }
+}
+a:hover{
+    text-decoration: none;
+    color: #ee5b54;
+}
+
+.icon{
+    display: inline-block;
+    justify-content: center;
+    max-width: 100%;
+    line-height: 1;
+    padding-right: 0.5em;
+    .icon_holder{ 
+        text-decoration: none !important;
+        box-shadow: none !important;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        line-height: inherit;
+        font-weight: normal;
+    }
+    .icon_holder:before{
+        order: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        line-height: normal;
+        transition: all 280ms ease;
+    }
+
+}
+
+body:not(.pageTransition){
+    min-height: 101vh;
+}
+.mainHeader, .verticalHeaderTop{
+    z-index: 10000;
+}
+.port{
+    width: 100%;
+    padding: 0 30px;
+}
+.gutter{
+    .port{
+        max-width: 1260px;
+        margin: auto;
+    }
+}
+.pageWrap{
+    position: relative;
+    overflow: hidden;
+    transition: transform 1s cubic-bezier(.230,1,.320,1);
+    
+    .contentWrap{
+        transition: transform 1s cubic-bezier(.230,1,.320,1);
+        .contentHolder{
+            width: auto;
+            padding: 0;
+            .content{
+                .wrapper{
+                    .bb_section{
+                        position: relative;
+                        .bb_port{
+                            z-index: 3;
+                            position: relative;
+                            padding-bottom: 4em;
+                            padding-top: 4em;
+                            align-items: flex-start;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            justify-content: center;
+                            .cell{
+                                position: relative;
+                                width: 1200px;
+                                .cell_inner{
+                                    .row_wrapper{
+                                        .bb_row{
+                                            .bb_column{
+                                                .bb_column_content{
+                                                    .bb_column_content_inner{
+                                                        .separator{}
+                                                        .head{
+                                                            .head_tag{
+                                                                .head_line{
+
+                                                                }
+                                                                .head_content{
+                                                                    span{}
+                                                                }
+                                                            }
+                                                        }
+                                                        .bb_image{
+                                                            span{
+                                                                .lazyLoadImg{}
+                                                                .lazyLoaded{}
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .bb_section_top{
+                            img{}
+                        }
+                        .bb_section_bottom{
+                            img{}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

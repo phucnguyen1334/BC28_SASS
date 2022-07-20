@@ -1,0 +1,235 @@
+.menuHorizontal:not(.menuCenter):not(.stickyHeaderActive){
+    .logo{ 
+        position: relative;
+        padding-left: 130px;
+    }
+    .crest{ 
+        position: absolute;
+        order: 0;
+        top: 0;
+        left: 0;
+        .crestImg{ 
+            width: 130px;
+            height: auto;
+        }
+    }
+}
+.mainHeader{ 
+    position: absolute;
+    width: 100%;
+    background-color: inherit;
+    transform: translateY(0);
+    transition: 300ms ease all;
+    visibility: hidden;
+    opacity: 0;
+    a{
+        position: relative;
+        color: inherit;
+        transition: all 100ms linear;
+    }
+    .mainHeaderInner{
+        .horizontalMenuTrigger{
+            display: none;
+            float: right;
+            margin: 0 0 0 8px;
+            font-size: 1.5em;
+            .icon{
+                float: left;
+                position: relative;
+                width: 24px;
+                height: 20px;
+                padding: 0;
+                margin: 30px 0;
+                .icon_holder::before{
+                    content:"";
+                    position: absolute;
+                    display: block;
+                    left: 0;
+                    right: 0;
+                    top: 10px;
+                    border-top-width: 2px;
+                    border-top-style: solid;
+                    margin-top: -1px;
+                    transform: scaleX(1);
+                }
+            }
+            .icon:before, .icon:after{
+                content:"";
+                position: absolute;
+                display: block;
+                left: 0;
+                right: 0;
+                top: 0;
+                border-top-width: 2px;
+                border-top-style: solid;
+                transition: 300ms ease all;
+                transform: translateY(0);
+                transform-origin: -0.75px 1px;
+            }
+            .icon:after{
+                top: auto;
+                bottom: 0;
+            }
+        }
+        
+        .menuPort{
+            position: relative;
+            font-size: 13px;
+            .topBarMenu{
+                float: right;
+                display: flex;
+                align-items: center;
+                margin-left: 50px;
+                line-height: inherit;
+                .topBarMenuCell{
+                    display: flex;
+                    align-items: center;
+                    vertical-align: middle;
+                    line-height: 38px;
+                    font-size: 0.9em;
+                    .btnWidget{
+                        display: inline-block;
+                        width: auto;
+                        line-height: 1;
+                        font-size: 0.9em;
+                        
+                        a{
+                            color: #fff;
+                            box-shadow: 0 0 0 3em #ee5b54 inset;
+                        }
+                        a.btnWidgetLink{
+                            display: flex;
+                            position: relative;
+                            overflow: hidden;
+                            flex-flow: row nowrap;
+                            justify-content: center;
+                            align-items: center;
+                            align-content: flex-start;
+                            padding: 1.1em 1.5em;
+                            margin: 6px;
+                            text-decoration: none;
+                            text-align: center;
+                            font-weight: 500;
+                            background: transparent;
+                            border-radius: 50px;
+                            transition: all 300ms ease;
+                            .iconWidgetIcon{
+                                padding-right: 0.5em;
+                            }
+                        }
+                    }
+                    .iconWidget{
+                        position: relative;
+                        display: inline-block;
+                        line-height: inherit;
+                        margin-left: 8px;
+                        margin-right: 8px;
+                        transition: all 100ms linear;
+                        .iconWidgetIcon{
+                            display: inline-block;
+                            line-height: inherit;
+                            font-size: 20px;
+                            .icon_holder{}
+                        }
+                    }
+                    .iconWidget:not(:first-child){
+                        margin-left: 1em;
+                        margin-right: 0;
+                    }
+                    .iconWidget:hover{
+                        color: #b61984;
+                    }
+                }
+            }
+            nav{
+                float: left;
+                padding-left: 50px;
+                .menu{
+                    list-style: none;
+                    display: block;
+                    margin: 0;
+                    padding: 0;
+                    transition: all 100ms ease 0s;
+                    .menuWideDropDown{
+                        position: relative;
+                        float: left;
+                        z-index: 5;
+                        padding: 0 50px 0 0;
+                        a{
+                            font-weight: 600;
+                            display: block;
+                            position: relative;
+                            padding: 1em 1em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+.menuInitFinished{
+    .mainHeader{
+        visibility: initial;
+        opacity: 1;
+    }
+}
+.logoArea{ 
+    position: relative;
+    z-index: 1;
+    .logo{ 
+        float: left;
+        position: relative;
+        z-index: 6;
+        line-height: 0;
+        img{ 
+            height: 80px;
+            width: auto;
+            display: block;
+        }
+    }
+}
+
+.transparentDarkHeader{
+    .mainHeader{
+        color: #181818;
+    } 
+    .verticalHeaderTop{
+        color: #181818;
+    }
+}
+.belowMenu.transparentDarkHeader{
+    .mainHeader{
+        background-color: transparent;
+    } 
+    .verticalHeaderTop{
+        background-color: transparent;
+    }
+}
+
+.verticalHeaderTop{
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    .verticalMenuTrigger{ 
+        display: none;
+        position: relative;
+        z-index: 1;
+        margin: 0 8px 0 0;
+        height: 48px;
+        font-size: 1.5em;
+        .icon{
+            float: left;
+            position: relative;
+            width: 24px;
+            height: 20px;
+            padding: 0;
+            margin: 14px 0;
+        }
+    }
+    
+}
+

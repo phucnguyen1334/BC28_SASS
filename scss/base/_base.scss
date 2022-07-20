@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+}
+
+
+.clear:after {
+    content: " ";
+    display: table;
+    width: 100%;
+    clear: both;
+    line-height: 0;
+}
+.mainHeader:after {
+    content: " ";
+    display: table;
+    width: 100%;
+    clear: both;
+    line-height: 0;
+}
+.menuPort:after {
+    content: " ";
+    display: table;
+    width: 100%;
+    clear: both;
+    line-height: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary, audio, canvas, video {
+    display: block;
+}
